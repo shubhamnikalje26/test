@@ -5,7 +5,10 @@
     <classes>
       <class name="Testng">
         <methods>
+          <include name="testD"/>
+          <include name="testc"/>
           <include name="beforeMethod"/>
+          <include name="verifyroombutton"/>
           <include name="afterMethod"/>
           <include name="Verifyhelpbutton"/>
           <include name="beforeclass"/>

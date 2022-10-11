@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -9,6 +11,7 @@ import org.testng.annotations.Test;
 
 import pages.Messengerpage;
 import pages.Roomspage;
+import testutils.Utility;
 
 public class Testng {
 	
@@ -16,6 +19,7 @@ public class Testng {
 	private WebDriver driver;
 	private Messengerpage mpage;
 	private Roomspage rpage;
+	private Utility utils;
 	
 
 	@BeforeClass
@@ -72,9 +76,9 @@ public class Testng {
 	}
 	
 	@Test(priority=2)
-	public void testc()  {
-		System.out.println("testC");
+	public void testc() throws IOException  {
 		
+		Utility.capturescreenshot(driver,1);
 	}
 	
 	@Test(priority=3)
